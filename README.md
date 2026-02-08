@@ -19,6 +19,6 @@
 * **`download.py`**: 辅助工具，用于加载本地权重或下载官方预训练模型。
   
 ## 训练DiT
-、、、
+```
 torchrun --nnodes=1 --nproc_per_node=2 train.py --model DiT-B/2 --data-path /vdc1/ddpm_label/Minerals_type_images_6114_label
-、、、
+```
