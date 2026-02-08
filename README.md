@@ -22,3 +22,14 @@
 ```
 torchrun --nnodes=1 --nproc_per_node=2 train.py --model DiT-B/2 --data-path /vdc1/ddpm_label/Minerals_type_images_6114_label
 ```
+### 采样
+```
+python sample.py --model DiT-B/2 --image-size 256 --ckpt /vdc1/DiT/results/000-DiT-B-2/checkpoints/0066000.pt
+```
+
+
+
+
+
+
+
