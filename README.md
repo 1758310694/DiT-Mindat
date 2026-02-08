@@ -27,7 +27,10 @@ torchrun --nnodes=1 --nproc_per_node=2 train.py --model DiT-B/2 --data-path /vdc
 python sample.py --model DiT-B/2 --image-size 256 --ckpt /vdc1/DiT/results/000-DiT-B-2/checkpoints/0066000.pt
 ```
 
-
+### 并行采样大量图像
+```
+torchrun --nnodes=1 --nproc_per_node=2 sample_ddp.py --model DiT-B/2 --ckpt /vdc1/DiT/results/000-DiT-B-2/checkpoints/0066000.pt --num-fid-samples 40000
+```
 
 
 
