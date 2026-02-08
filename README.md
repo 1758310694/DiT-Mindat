@@ -17,3 +17,8 @@
 * **`sample.py`**: 单机推理脚本，用于快速生成少量演示图像。
 * **`sample_ddp.py`**: 多卡并行采样脚本，用于高效生成大量图像以计算 FID、KID、IS。
 * **`download.py`**: 辅助工具，用于加载本地权重或下载官方预训练模型。
+  
+## 训练DiT
+、、、
+torchrun --nnodes=1 --nproc_per_node=2 train.py --model DiT-B/2 --data-path /vdc1/ddpm_label/Minerals_type_images_6114_label
+、、、
